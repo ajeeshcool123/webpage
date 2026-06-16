@@ -1,0 +1,27 @@
+:root{
+  --bg:#f5f7f5;
+  --card:#ffffff;
+  --accent:#1b8f3a;
+  --text:#0b1220;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.4}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg,rgba(27,143,58,0.95),rgba(10,90,40,0.95));color:white;padding:0.6rem 0}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.site-header h1{margin:0;font-size:1.4rem}
+.controls button{background:transparent;border:0;color:white;font-size:1.1rem;cursor:pointer}
+.hero{padding:3.5rem 0;text-align:center;background-image:linear-gradient(180deg,rgba(0,0,0,0.03),transparent)}
+.hero h2{margin:0 0 .5rem;font-size:2rem}
+.btn{display:inline-block;background:var(--accent);color:white;padding:.6rem 1rem;border-radius:8px;text-decoration:none;margin-top:0.7rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;padding:2rem 0}
+.card{background:var(--card);padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(10,20,30,0.06)}
+.facts{padding:2rem 0;text-align:center}
+.site-footer{padding:1rem 0;text-align:center;color:#334}
+
+/* Dark theme */
+body.dark{background:#071217;color:#dcecf0}
+body.dark .site-header{background:linear-gradient(90deg,#053a20,#022915)}
+body.dark .card{background:#072022;color:#cfeee0}
+
+@media (max-width:520px){.hero h2{font-size:1.4rem}}
